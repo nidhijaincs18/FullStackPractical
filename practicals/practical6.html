@@ -7,32 +7,42 @@
     <title>Practical-6</title>
     <style>
         body {
-            background-color: lightgrey;
+            background-color: lightgray;
             font-family: Arial, Helvetica, sans-serif;
         }
         
-        h1,
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #092532;
+        }
+        
         h4 {
             text-align: center;
-            color: #222831;
+            color: #092532;
+            font-size: 20px;
+            margin: 20px;
+        }
+        
+        .container {
+            margin: auto;
         }
         
         .box_img {
             width: 100%;
-            border-radius: 8px;
+            border-radius: 9px;
             height: 170px;
-            margin-bottom: 10px;
         }
         
         .box {
-            text-align: center;
-            width: 19%;
+            text-align: justify;
+            width: 20%;
             background-color: white;
-            margin: 20px 15px;
-            padding: 20px;
+            margin: 20px 20px;
+            padding: 15px;
             float: left;
-            border-radius: 8px;
-            margin-top: ;
+            border-radius: 9px;
+            margin-top: 50px;
         }
         
         .box_a {
@@ -40,7 +50,7 @@
             background-color: #cf1b1b;
             padding: 12px;
             text-align: center;
-            border-radius: 8px;
+            border-radius: 9px;
         }
         
         .box_a:hover {
@@ -54,55 +64,59 @@
         
         .box_para {
             text-align: justify;
+            padding: 0 10px;
+            line-height: 25px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Practical - 6: Create following Layouts using CSS Layout Properties.</h1>
-    <div class="box">
-        <img class="box_img" src="p5/image/html.png" alt="html-image">
-        <h4>Introduction to HTML</h4>
-        <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
-        <a href="p5/html5.html" target="_blank">
-            <div class="box_a">
-                Read More
-            </div>
-        </a>
+    <h1>Practical-6: Create following Layouts using CSS Layout Properties.</h1>
+    <div class="container">
+        <div class="box">
+            <img class="box_img" src="p5/image/html.png" alt="html-image">
+            <h4>Introduction to HTML</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/html5.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
 
-    </div>
-    <div class="box">
-        <img class="box_img" src="p5/image/css.png" alt="css-image">
-        <h4>Introduction to CSS</h4>
-        <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
-        <a href="p5/css.html" target="_blank">
-            <div class="box_a">
-                Read More
-            </div>
-        </a>
+        </div>
+        <div class="box">
+            <img class="box_img" src="p5/image/css.png" alt="css-image">
+            <h4>Introduction to CSS</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/css.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
 
-    </div>
-    <div class="box">
-        <img class="box_img" src="p5/image/javascript.png" alt="javascript-image">
-        <h4>Introduction to JavaScript</h4>
-        <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
-        <a href="p5/js.html" target="_blank">
-            <div class="box_a">
-                Read More
-            </div>
-        </a>
+        </div>
+        <div class="box">
+            <img class="box_img" src="p5/image/javascript.png" alt="javascript-image">
+            <h4>Introduction to JavaScript</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/js.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
 
-    </div>
-    <div class="box">
-        <img class="box_img" src="p5/image/bootstrap.png" alt="bootstrap-image">
-        <h4>Introduction to BootStrap</h4>
-        <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
-        <a href="p5/bootstrap.html" target="_blank">
-            <div class="box_a">
-                Read More
-            </div>
-        </a>
+        </div>
+        <div class="box">
+            <img class="box_img" src="p5/image/bootstrap.png" alt="bootstrap-image">
+            <h4>Introduction to BootStrap</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/bootstrap.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
 
+        </div>
     </div>
 </body>
 
