@@ -5,6 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            /* border: 1px solid black; */
+            width: 700px;
+            margin: 15px auto;
+            padding: 10px;
+            box-shadow: 0 5px 8px black;
+        }
+        
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: darkgrey;
+            /* border-radius: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(98, 184, 103);
+            /* border-radius: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .banner {
+            width: 100%;
+            height: 350px;
+            margin: 8px 0;
+            background-color: lightblue;
+            /* border-radius: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .section1block {
+            width: 100%;
+            height: 180px;
+            justify-content: center;
+        }
+        
+        .section {
+            height: 40px;
+            display: flex;
+            margin: 8px 0 8px 0;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        
+        .circle {
+            display: inline-block;
+            width: 20%;
+            height: 130px;
+            margin: 0 15px;
+            background-color: rgb(221, 224, 40);
+            border-radius: 100%;
+        }
+        
+        .main-content {
+            float: left;
+            width: 48%;
+            height: 250px;
+            margin-right: 16px;
+            background-color: lightslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .article {
+            width: 49%;
+            height: 78px;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background-color: lightsalmon;
+            color: white;
+        }
+        
+        .section2block:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .rect {
+            float: left;
+            width: 22%;
+            margin: 10px;
+            height: 180px;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            background-color: lightseagreen;
+        }
+        
+        .section3block:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
 </head>
 <div class="container">
     <div class="header">
@@ -13,15 +138,19 @@
     <div class="banner">
         Banner
     </div>
-    <div class="section-1">
-        Section-1
+    <div class="section1block">
+        <div class="section">
+            <b> Section-1 </b>
+        </div>
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
     </div>
-    <div class="section-2">
-        Section-2
+    <div class="section2block">
+        <div class="section">
+            <b> Section-2</b>
+        </div>
         <div class="main-content">
             Main-Content
         </div>
@@ -38,15 +167,19 @@
         </div>
 
     </div>
-    <div class="section-3">
-        Section-3
+    <div class="section3block">
+        <div class="section">
+            <b> Section-3 </b>
+        </div>
         <div class="rect"></div>
         <div class="rect"></div>
         <div class="rect"></div>
         <div class="rect"></div>
     </div>
-    <div class="section-4">
-        Section-4
+    <div class="section4block">
+        <div class="section">
+            <b> Section-4 </b>
+        </div>
     </div>
     <div class="footer">
         Footer
