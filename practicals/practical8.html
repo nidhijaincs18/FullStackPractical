@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        #navbar {
+            position: fixed;
+            list-style-type: none;
+            margin-left: 20px;
+            padding: 5px;
+            overflow: hidden;
+            background-color: gray;
+            width: 96.7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        
+        ul#navbar li {
+            float: left;
+            margin: 3px 0;
+        }
+        
+        ul#navbar li a {
+            display: block;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 8px 16px;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px 50px;
+        }
+        
+        ul#navbar li a:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+        
+        #top-section {
+            padding: 100px 20px 20px;
+        }
+        
+        #top-section img {
+            margin-right: 20px;
+            width: 100%;
+        }
+        
+        #top-section h1 {
+            position: absolute;
+            font-size: 100px;
+            color: whitesmoke;
+            left: 60px;
+            top: 120px;
+        }
+        
+        #team {
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .heading {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            padding-top: 60px;
+        }
+        
+        .circle img {
+            height: 300px;
+            float: left;
+            width: 21%;
+            margin-left: 40px;
+            margin-top: 20px;
+            padding: 7px;
+            border-radius: 100%;
+        }
+        
+        #about {
+            margin: 20px;
+        }
+        
+        .main-content {
+            float: left;
+            width: 49%;
+            height: 500px;
+            margin-top: 20px;
+            margin-right: 20px;
+            background-color: lightslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .article img {
+            width: 49.5%;
+            display: flex;
+            height: 153px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .article h1 {
+            position: absolute;
+            right: 300px;
+        }
+        
+        .main-content p {
+            padding: 10px;
+            line-height: 1.5;
+        }
+        
+        #about:after,
+        #team:after,
+        #tech:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        h4 {
+            text-align: center;
+            color: #092532;
+            font-size: 20px;
+            margin: 20px;
+        }
+        
+        .box_img {
+            width: 100%;
+            border-radius: 9px;
+            height: 170px;
+        }
+        
+        .box {
+            width: 20%;
+            background-color: lightgray;
+            margin: 20px;
+            padding: 15px;
+            float: left;
+            border-radius: 9px;
+        }
+        
+        .box_a {
+            color: white;
+            background-color: #cf1b1b;
+            padding: 12px;
+            text-align: center;
+            border-radius: 9px;
+        }
+        
+        .box_a:hover {
+            background-color: #006a71;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .box_para {
+            text-align: justify;
+            padding: 0 10px 10px;
+            line-height: 25px;
+        }
+        
+        .bottom-container {
+            display: block;
+            background-color: rgb(150, 142, 142);
+            text-align: center;
+            padding: 50px;
+            margin: 0 20px;
+        }
+        
+        .bottom-container p {
+            display: inline;
+        }
+        
+        .bottom-container a {
+            margin: 30px 10px 10px;
+        }
+        
+        .bottom-container a:hover {
+            color: brown;
+        }
+        
+        .a1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <ul id="navbar">
+        <li><a href="#top-section">HOME</a></li>
+        <li><a href="#about">ABOUT US</a> </li>
+        <li><a href="#team">TEAM</a> </li>
+        <li><a href="#tech">TECHNOLOGIES</a> </li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+    <div id="top-section">
+        <h1>Practical-8</h1>
+        <img src="images-practical8/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="top-image">
+
+    </div>
+    <div id="team">
+        <div class="heading">
+            <b> Team Members </b>
+        </div>
+
+        <div class="circle"><img src="images-practical8/1.png" alt="1-img"></div>
+        <div class="circle"><img src="images-practical8/2.png" alt="2-img"></div>
+        <div class="circle"><img src="images-practical8/3.png" alt="3-img"></div>
+        <div class="circle"><img src="images-practical8/4.png" alt="4-img"></div>
+
+    </div>
+    <div id="about">
+        <div class=heading>
+            <b> About Us</b>
+        </div>
+        <div class="main-content">
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio debitis quo sed praesentium inventore quidem natus cum, nesciunt modi laboriosam earum enim saepe delectus blanditiis neque porro voluptatum excepturi nobis iste libero rem sapiente
+                incidunt? Ea voluptate id molestiae, nam nostrum tenetur temporibus. Qui laboriosam, placeat earum, architecto laborum libero totam nostrum vero, ut corrupti autem! Doloremque iure sit impedit suscipit, voluptatum eos architecto, delectus
+                in ex autem quibusdam ipsam ducimus velit a omnis, amet excepturi iste ad incidunt animi exercitationem explicabo tempore sed. Nisi repudiandae odio consequatur molestiae inventore dignissimos culpa aliquam quia error, delectus consequuntur
+                temporibus nostrum rerum officia dolorum possimus velit beatae? Exercitationem est officiis quod doloribus neque commodi aspernatur ut doloremque sit itaque maxime sunt voluptates quisquam nihil, eius esse. Ipsam?
+            </p>
+        </div>
+        <div class="right-container">
+            <div class="article">
+                <h1>Project-1</h1>
+                <img src="images-practical8/p1.jpg" alt="p1">
+            </div>
+            <div class="article">
+                <h1>Project-2</h1>
+                <img src="images-practical8/p2.jpeg" alt="p2">
+            </div>
+            <div class="article">
+                <h1>Project-3</h1>
+                <img src="images-practical8/p3.jpg" alt="p3">
+            </div>
+        </div>
+
+    </div>
+    <div id="tech">
+        <div class=heading>
+            <b> Technologies used</b>
+        </div>
+        <div class="box">
+            <img class="box_img" src="p5/image/html.png" alt="html-image">
+            <h4>Introduction to HTML</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/html5.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
+
+        </div>
+        <div class="box">
+            <img class="box_img" src="p5/image/css.png" alt="css-image">
+            <h4>Introduction to CSS</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/css.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
+
+        </div>
+        <div class="box">
+            <img class="box_img" src="p5/image/javascript.png" alt="javascript-image">
+            <h4>Introduction to JavaScript</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/js.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
+
+        </div>
+        <div class="box">
+            <img class="box_img" src="p5/image/bootstrap.png" alt="bootstrap-image">
+            <h4>Introduction to BootStrap</h4>
+            <p class="box_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quisquam tempore veniam dolorum! Harum explicabo dignissimos corrupti quibusdam. Iure, nisi!</p>
+            <a href="p5/bootstrap.html" target="_blank">
+                <div class="box_a">
+                    Read More
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <div id="contact">
+        <div class="heading">
+            <b>Contact</b>
+        </div>
+        <div class="bottom-container">
+            <p>Website Template for Practical-8 </p>
+            <a href="https://beta-labs.in">@beta-labs</a>
+            <a class="a1" href="#top-section">Back to top</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
