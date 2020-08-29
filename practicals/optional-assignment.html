@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .footer {
+            min-width: 500px;
+        }
+        
+        body {
+            background-color: #393b44;
+            color: white;
+        }
+        /* Upper-section */
+        
+        .upper-section {
+            padding: 0 10px;
+        }
+        
+        .about {
+            float: left;
+            width: 40%;
+            padding: 40px 50px;
+        }
+        
+        .link div {
+            float: left;
+            width: 20%;
+            padding: 40px;
+        }
+        
+        .upper-section:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .about h1,
+        .link div h1 {
+            padding: 20px 0;
+        }
+        
+        .about p {
+            line-height: 2;
+            font-size: 20px;
+        }
+        
+        .link div p {
+            padding: 5px;
+            font-size: 20px;
+        }
+        /* Middle-section */
+        /* SignUp */
+        
+        hr {
+            border: none;
+            width: 95%;
+            margin: auto;
+            height: 20px;
+            margin-top: 0;
+            border-bottom: 1px solid #222831;
+            box-shadow: 0 5px 5px -5px #333;
+        }
+        
+        .signup {
+            padding: 30px 30px 12px;
+            text-align: center;
+            line-height: 80px;
+        }
+        
+        .signup h1 {
+            display: inline;
+        }
+        
+        .signup .btn {
+            margin: 0 30px;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 35px;
+            border: none;
+            background-color: #d92027;
+        }
+        
+        .signup .btn:hover {
+            background-color: #12947f;
+        }
+        /* Icons */
+        
+        .icons {
+            margin: 50px;
+            text-align: center;
+        }
+        
+        .icons .i {
+            display: inline-block;
+        }
+        
+        .icons .i .icon {
+            background: black;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 15px;
+            line-height: 60px;
+            vertical-align: middle;
+            padding: 18px;
+            margin: 0 8px;
+        }
+        
+        .icons .i .fa-facebook-f:hover {
+            background-color: #4267B2;
+        }
+        
+        .icons .i .fa-twitter:hover {
+            background-color: #40a8c4;
+        }
+        
+        .icons .i .fa-google-plus-g:hover {
+            background-color: #dd2c00;
+        }
+        
+        .icons .i .fa-linkedin-in:hover {
+            background-color: #2867B2;
+        }
+        
+        .icons .i .fa-basketball-ball:hover {
+            background-color: #e84a5f;
+        }
+        /* Bottom Section */
+        
+        .bottom-section {
+            text-align: center;
+            bottom: 0;
+            background-color: #222831;
+            line-height: 105px;
+        }
+        
+        @media(max-width: 800px) {
+            .about {
+                float: none;
+                width: 80%;
+                margin: auto;
+                text-align: center;
+            }
+            .link div {
+                width: 33.33%;
+                padding-left: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+        <div class="upper-section">
+            <div class="about">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente dignissimos odit necessitatibus voluptatum modi expedita corrupti quos ab velit quia totam aliquid?</p>
+            </div>
+            <div class="link">
+                <div>
+                    <h1>Links</h1>
+                    <p>Link1</p>
+                    <p>Link2</p>
+                    <p>Link3</p>
+                    <p>Link4</p>
+                </div>
+                <div>
+                    <h1>Links</h1>
+                    <p>Link1</p>
+                    <p>Link2</p>
+                    <p>Link3</p>
+                    <p>Link4</p>
+                </div>
+                <div>
+                    <h1>Links</h1>
+                    <p>Link1</p>
+                    <p>Link2</p>
+                    <p>Link3</p>
+                    <p>Link4</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle-section">
+            <hr>
+            <div class="signup">
+                <h1>Register for Free</h1>
+
+                <input type="button" class="btn" value="SIGN UP!">
+
+
+            </div>
+            <hr>
+
+            <div class="icons">
+                <div class="i"><i class="icon fab fa-facebook-f"></i></div>
+                <div class="i"><i class=" icon fab fa-twitter"></i></div>
+                <div class="i"><i class=" icon fab fa-google-plus-g"></i></div>
+                <div class="i"><i class="icon fab fa-linkedin-in"></i></div>
+                <div class="i"><i class="icon fas fa-basketball-ball"></i></div>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <p><span style="color: gray;">@ 2020 Copyright:</span> XXXXXXXXXXXX</p>
+        </div>
+    </div>
+</body>
+
+</html>
