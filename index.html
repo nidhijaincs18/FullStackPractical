@@ -5,68 +5,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Stack Practical</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            background-color: #cbeaed;
+            font-family: Arial, Helvetica, sans-serif;
         }
         
-        h1 {
-            color: #006a71;
+        table {
+            border: 2px solid #1d3557;
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 15px;
         }
         
-        h2 {
-            text-align: center;
-        }
-        
-        p {
-            text-align: justify;
-            width: 90%;
+        .container {
+            width: 75%;
+            border-radius: 15px;
             margin: auto;
+            padding-top: 30px;
         }
         
-        .links {
-            display: inline;
-            margin-left: 5%;
+        .topic {
+            width: 50%;
+            padding: 13px 0;
         }
         
-        .heading {
-            text-align: left;
-            margin-left: 5%;
+        table tr td {
+            padding: 13px 15px;
+        }
+        
+        th,
+        tr {
+            border-top: 1.5px solid gray;
+        }
+        
+        thead td {
+            font-weight: bold;
+        }
+        
+        caption {
+            font-size: 20px;
+            width: 100%;
+            padding: 15px;
+            background-color: #051923;
+            color: whitesmoke;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        table a {
+            text-decoration: none;
+            color: #6b9080;
+            transition: .2s;
+        }
+        
+        .icon {
+            padding: 13px 20px;
+        }
+        
+        .pen {
+            margin-right: 15px;
+            color: #22333b;
+            font-size: 20px;
+        }
+        
+        .pen:hover {
+            color: #07689f;
+        }
+        
+        .trash {
+            margin-right: 0;
+            color: #22333b;
+            font-size: 20px;
+        }
+        
+        .trash:hover {
+            color: red;
+        }
+        
+        .checked {
+            color: green;
+        }
+        
+        .checked:hover {
+            font-weight: 600;
+        }
+        
+        .unchecked {
+            color: red;
+        }
+        
+        .unchecked:hover {
+            font-weight: 600;
+        }
+        
+        table a:hover {
+            color: #051923;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f1f3f8;
         }
     </style>
 </head>
 
 <body>
-    <h1 class="heading">Welcome to FullStack Course</h1>
-    <h1 class="heading"> About Course</h1>
-    <p>Front End Development is everything invloved in programming the user inetrface for a web application. Typically it refers to the HyperText markup Language(HTML), Cascading Style Sheets(CSS) and JavaScript portion of website production as opposed to
-        the database or server-side programming.
-    </p>
-    <h1 class="heading">List Of Practicals</h1>
+    <div class="container">
+        <table>
+            <caption>
+                FullStack Live Practical Book
+            </caption>
 
-    <p class="links">1. Create a Web page including HTML basic skeleton using HTML Editor and Online Sandbox Environment.</p><a href="practicals/practical1.html" target="_blank">Practical1</a>
-    <br><br>
-    <p class="links">2. Live your First Web-Page on Git-Hub.</p><a href="practicals/practical2.html" target="_blank"> Practical2</a>
-    <br><br>
-    <p class="links">3. Create a web page showing a basic html structure using character Entities and span Tag.</p> <a href="practicals/practical3.html" target="_blank">Practical3</a>
-    <br><br>
-    <p class="links">4. Create a website having list of all practical and their individual practical Page links.</p> <a href="practicals/practical4.html" target="_blank">Practical4</a>
-    <br><br>
-    <p class="links">5. Create a Web-Page showing the use of Image-Map in the Web Application.</p> <a href="practicals/practical5.html" target="_blank">Practical5</a>
-    <br><br>
-    <p class="links">6. Create a Card Layout using CSS layout properties.</p><a href="practicals/practical6.html" target="_blank">Practical6</a>
-    <br><br>
-    <p class="links">7. Create a Web Page Layout using div tags.</p><a href="practicals/practical7.html" target="_blank">Practical7</a>
-    <br><br>
-    <p class="links">8. Create a Web Page having Fixed Navigation Bar with the given content.</p><a href="practicals/practical8.html" target="_blank">Practical8</a>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td class="topic">Practical Name</td>
+                    <td>Link</td>
+                    <td>Status</td>
+                    <td class="icon">Tools</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td class="topic">Create a Web page including HTML basic skeleton using HTML Editor and Online Sandbox Environment.</td>
+                    <td><a href="../practicals/practical1.html" target="_blank">Practical-1</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
 
-    <br><br>
-    <p class="links">9. Create a Responsive Web Layout with Responsive Navigation Bar.</p><a href="practicals/practical9.html" target="_blank">Practical9</a>
-    <br><br>
-    <p class="links">10. Create a Responsive Side-Bar Navigation Menu.</p><a href="practicals/practical10.html" target="_blank">Practical10</a>
-    <br><br>
-    <p class="links">11. Create a Table that represent Live Practical Book Records .</p><a href="practicals/practical11.html" target="_blank">Practical11</a>
 
+                    </td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td class="topic">Live your First Web-Page on Git-Hub.</td>
+                    <td><a href="../practicals/practical2.html" target="_blank">Practical-2</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt  pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td class="topic">Create a web page showing a basic html structure using character Entities and span Tag.</td>
+                    <td><a href="../practicals/practical3.html" target="_blank">Practical-3</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td class="topic">Create a website having list of all practical and their individual practical Page links.</td>
+                    <td><a href="../practicals/practical4.html" target="_blank">Practical-4</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td class="topic">Create a Web-Page showing the use of Image-Map in the Web Application.</td>
+                    <td><a href="../practicals/practical5.html" target="_blank">Practical-5</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td class="topic">Create a Card Layout using CSS layout properties.</td>
+                    <td><a href="../practicals/practical6.html" target="_blank">Practical-6</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td class="topic">Create a Web Page Layout using div tags.</td>
+                    <td><a href="../practicals/practical7.html" target="_blank">Practical-7</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td class="topic">Create a Web Page having Fixed Navigation Bar with the given content.</td>
+                    <td><a href="../practicals/practical8.html" target="_blank">Practical-8</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td class="topic">Create a Responsive Web Layout with Responsive Navigation Bar.</td>
+                    <td><a href="../practicals/practical9.html" target="_blank">Practical-9</a></td>
+                    <td class="checked">Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td class="topic">Create a Responsive Side-Bar Navigation Menu.</td>
+                    <td><a href="../practicals/practical10.html" target="_blank">Practical-10</a></td>
+                    <td class="unchecked">Un-Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td class="topic">Create a Table that represent Live Practical Book Records.</td>
+                    <td><a href="../practicals/practical11.html" target="_blank">Practical-11</a></td>
+                    <td class="unchecked">Un-Checked</td>
+                    <td class="icon">
+                        <i class="fas fa-pencil-alt pen"></i>
+                        <i class="fas fa-trash trash"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
