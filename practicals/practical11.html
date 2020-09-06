@@ -40,23 +40,20 @@
             padding: 13px 15px;
         }
         
-        th,
         tr {
             border-top: 1.5px solid gray;
         }
         
-        thead td {
+        thead .heading {
             font-weight: bold;
         }
         
-        caption {
+        .top {
             font-size: 20px;
-            width: 100%;
             padding: 15px;
             background-color: #051923;
             color: whitesmoke;
-            /* border-top-left-radius: 10px;
-            border-top-right-radius: 10px; */
+            text-align: center;
         }
         
         table a {
@@ -110,7 +107,7 @@
             font-weight: bold;
         }
         
-        tr:hover {
+        tbody tr:hover {
             background-color: #f1f3f8;
         }
     </style>
@@ -119,12 +116,15 @@
 <body>
     <div class="container">
         <table>
-            <caption>
-                FullStack Live Practical Book
-            </caption>
+
 
             <thead>
-                <tr>
+                <tr class="top">
+                    <td colspan="5">
+                        FullStack Live Practical Book
+                    </td>
+                </tr>
+                <tr class="heading">
                     <td></td>
                     <td class="topic">Practical Name</td>
                     <td>Link</td>
