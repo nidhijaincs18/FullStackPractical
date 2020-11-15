@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Clock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        #time {
+            font-size: 8rem;
+        }
+        
+        h1 {
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 50px;
+            opacity: 0.5;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <time id="time"></time>
+    <h1 id="greeting"></h1>
+    <h2 id="name" contenteditable="true">Enter Your Name</h2>
+    <p id="day"></p>
+
+
+
+
+    <script>
+        //Selectors
+        var time = document.getElementById("time");
+        var greeting = document.getElementById("greeting");
+        var aname = document.getElementById("name");
+        var day = document.getElementById("day");
+
+        //Event handlers
+        aname.addEventListener("keypress", setName);
+        aname.addEventListener("blur", setName);
+
+        //Functions
+        function showTime() {
+            let today = new Date();
+            let hour = today.getHours();
+            let min = today.getMinutes();
+            let sec = today.getSeconds();
+            let date = today.toDateString();
+
+            //am - pm format
+            const ampm = hour >= 12 ? 'PM' : 'AM';
+
+            hour = hour % 12 || 12;
+            time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(min)}<span>:</span>${addZero(sec)} ${ampm}`;
+
+            day.innerHTML = `${date}`;
+
+            setTimeout(showTime, 1000);
+
+        }
+
+        function addZero(h) {
+            return ((parseInt(h, 10)) < 10 ? "0" : "") + h;
+        }
+
+        function setGreeting() {
+            let today = new Date();
+            let hour = today.getHours();
+
+            if (hour < 12) {
+                document.body.style.backgroundImage = 'url("images/morning.jpg")';
+                greeting.innerHTML = "Good Morning";
+            } else if (hour < 18) {
+                document.body.style.backgroundImage = 'url("images/noon.jpg")';
+                greeting.innerHTML = "Good Afternoon";
+            } else if (hour < 21) {
+                document.body.style.backgroundImage = 'url("images/evening.jpg")';
+                document.body.style.color = 'white';
+                greeting.innerHTML = "Good Evening";
+            } else {
+                document.body.style.backgroundImage = 'url("images/night.jpg")';
+                document.body.style.color = "white";
+                greeting.innerHTML = "Good Night";
+            }
+        }
+
+        function getName() {
+            if (localStorage.getItem("Name") === null) {
+                aname.innerHTML = "[Enter Name]";
+            } else {
+                aname.innerHTML = localStorage.getItem("Name");
+            }
+        }
+
+        function setName(e) {
+            if (e.type === "keypress") {
+                if (e.keyCode == 13) {
+                    localStorage.setItem("Name", e.target.innerHTML);
+                    aname.blur();
+                }
+            } else {
+                localStorage.setItem("Name", e.target.innerHTML);
+            }
+        }
+
+
+        //Function Calling
+        showTime();
+        setGreeting();
+        getName();
+    </script>
+</body>
+
+</html>
